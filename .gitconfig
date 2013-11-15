@@ -1,0 +1,22 @@
+[user]
+	name = g9702
+	email = g9702@cs.nccu.edu.tw
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	log = auto
+[alias]
+	st = status -uno
+	co = checkout
+	ci = commit
+	re = reset
+	lg1 = log --graph --pretty=format:'%C(yellow)%p%Creset -%C(red)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg = log --graph --all --topo-order --decorate --oneline --boundary
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 700x550+0+24
+	main-window-view = HistoryView
+	history-view-vpane-position = 731
+	file-view-vpane-position = 94
