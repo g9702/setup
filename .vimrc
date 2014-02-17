@@ -49,8 +49,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/powerline'
 " vim-scripts repos
 Bundle 'Align'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
 " non github repos
 
 if iCanHazVundle == 0
@@ -70,16 +68,6 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
-
-
-" FuzzyFinder key mapping
-map fb <esc>:FufBuffer<cr>
-map ff <esc>:FufFile<cr>
-map fd <esc>:FufDir<cr>
-map fj <esc>:FufJumpList<cr>
-map fc <esc>:FufChangeList<cr>
-map <silent> <c-\> :FufTag! <c-r>=expand('<cword>')<cr><cr>
-map <c-f12> <esc>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<cr>
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
