@@ -49,6 +49,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/powerline'
 " vim-scripts repos
 Bundle 'Align'
+Bundle 'Tagbar'
 " non github repos
 
 if iCanHazVundle == 0
@@ -122,7 +123,8 @@ map <F8> :set hls!<BAR>set hls?<CR>     " toggle on/off highlightsearch
 map <F9> :set paste!<BAR>set paste?<CR> " toggle on/off paste mode
 set pastetoggle=<F9>
 map <F10> <ESC>:read !date<CR>
-map :T :TlistToggle<CR>
+"map :T :TlistToggle<CR>
+nmap <F12> :TagbarToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 
