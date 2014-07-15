@@ -101,6 +101,7 @@ endfunction
 inoremap <TAB> <C-R>=InsertTabWrapper()<CR>
 
 
+autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType c,cpp,cc,java call PROG()
 function PROG()
 	set showmatch
