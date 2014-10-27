@@ -124,8 +124,10 @@ map <F8> :set hls!<BAR>set hls?<CR>     " toggle on/off highlightsearch
 map <F9> :set paste!<BAR>set paste?<CR> " toggle on/off paste mode
 set pastetoggle=<F9>
 map <F10> <ESC>:read !date<CR>
-"map :T :TlistToggle<CR>
 nmap <F12> :TagbarToggle<CR>
+map :hex  :%!xxd
+map :hexr :%!xxd -r
+"map :T :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 
