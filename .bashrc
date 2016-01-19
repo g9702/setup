@@ -93,7 +93,8 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # ignore svn folder
-alias greps='grep -rn --exclude="*.svn-base"'
+alias greps='grep -rn --exclude="*.svn*"'
+alias duf='du --max-depth=1 -B M'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -111,6 +112,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+export LANGUAGE=en_US.utf8
 export EDITOR=vim
 export SVN_EDITOR=vim
 export GIT_EDITOR=vim
