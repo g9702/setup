@@ -1,8 +1,8 @@
-set number
+"set number
 set nocompatible        " Disable vi-compatibility
 set laststatus=2        " Always show the statusline
 set encoding=utf-8      " Necessary to show Unicode glyphs
-"set t_Co=256            " Explicitly tell Vim that the terminal supports 256 colors
+set t_Co=16             " Explicitly tell Vim that the terminal supports 256 colors
 set t_Sf=^[[1;3%p1%dm   " set foreground color
 set t_Sb=^[[1;4%p1%dm   " set background color
 set incsearch           " While typing a search pattern, show immediately where the so far typed pattern matches.
