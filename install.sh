@@ -1,6 +1,11 @@
 cp .bashrc .vimrc .gitconfig ~/
 
 cd ~/
-mkdir -P .fonts
+mkdir -p .fonts
 cd .fonts
-git clone https://github.com/Lokaltog/powerline-fonts.git
+if [ ! -d "powerline-fonts" ]; then
+	git clone https://github.com/Lokaltog/powerline-fonts.git
+else
+	cd powerline-fonts
+	git pull
+fi
