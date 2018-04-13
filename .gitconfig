@@ -15,3 +15,5 @@
 	lg1 = log --graph --pretty=format:'%C(yellow)%p%Creset -%C(red)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	lg = log --graph --all --topo-order --decorate --oneline --boundary
 
+[push]
+	default = simple
